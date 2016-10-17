@@ -6,17 +6,17 @@
 
 
 // Our variables
-$base-font-family: 'Source Serif Pro', serif;
-$base-font-size:   20px;
+$base-font-family: 'Libre Baskerville', serif;
+$base-font-size:   18px;
 $title-font-size: {{site.title-font-size}};
 
 $base-font-weight: 400;
 $small-font-size:  $base-font-size * 0.875;
-$base-line-height: 1.6;
+$base-line-height: 1.8;
 
 $spacing-unit:     30px;
 
-$text-color:       #555;
+$text-color:       #333;
 $background-color: #fdfdfd;
 $brand-color:      #98C1D9;
 $comp-color:       #A7D3A6;
