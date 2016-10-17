@@ -15,12 +15,15 @@ h1, h2, h3, h4, h5, h6{
 /**
  * Basic styling
  */
-body {
+
+html, body {
     font-family: $base-font-family;
     font-size: $base-font-size;
     line-height: $base-line-height;
     color: $text-color;
     text-rendering: optimizeLegibility;
+    height: 100%;
+    
        @include media-query($on-palm) {
         font-size: 1em;
     }

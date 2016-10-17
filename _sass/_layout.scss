@@ -173,4 +173,12 @@ table {
 
 .page-content {
     margin-top: 40px;
+
+}
+
+.post-content p:first-of-type:first-letter{
+    font-size: 300%;
+    font-weight: bold;
+    padding: 0px 0px 0px 10px;
+    line-height: 1.15;
 }
