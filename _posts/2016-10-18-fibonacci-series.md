@@ -81,6 +81,8 @@ So the complete code with for loop looks like
 </html>
 {% endhighlight %}
 
+HTML because you can save it as an html file and run it to see the output.
+
 I came up with this code because this is how I used to do it in C in college. There can be a better way to do this but I wanted to come up with my own code. Not to copy from anywhere. Let me know if there's an easier way.
 
 Output
