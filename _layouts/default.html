@@ -20,6 +20,33 @@ layout: compress
    <div class="wrapper">
     {% include footer.html %}
    </div>
+
+<!-- Load blocking css at the end -->
+    <noscript>
+          <link rel="stylesheet" type="text/css" href="/css/main.css"/>
+          <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Alfa+Slab+One|Libre+Baskerville"/>
+    </noscript>
+
+
+    <script>
+        (function() {
+            var font = document.createElement('link'); 
+            var font2 = document.createElement('link'); 
+            font.type = 'text/css'; 
+            font2.type = 'text/css'; 
+            font.rel = 'stylesheet';
+            font2.rel = 'stylesheet';
+            font.href = '/css/main.css';
+            font2.href = '//fonts.googleapis.com/css?family=Alfa+Slab+One|Libre+Baskerville';
+            var s = document.getElementsByTagName('link')[0]; 
+            var t = document.getElementsByTagName('link')[0]; 
+            s.parentNode.insertBefore(font, s);
+            t.parentNode.insertBefore(font2, t);
+          })();
+    </script>
+<!-- Load blocking css at the end -->
+   
+   
    {% if site.analytics %}
    {% include analytics.html %}
    {% endif %}
