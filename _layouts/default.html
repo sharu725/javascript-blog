@@ -19,27 +19,7 @@ layout: compress
     </div>
    <div class="wrapper">
     {% include footer.html %}
-   </div>
-
-<!-- Load blocking css at the end -->
-    <noscript>
-          <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Alfa+Slab+One|Libre+Baskerville"/>
-    </noscript>
-
-
-    <script>
-        (function() {
-            var font2 = document.createElement('link'); 
-            font2.type = 'text/css'; 
-            font2.rel = 'stylesheet';
-            font2.href = '//fonts.googleapis.com/css?family=Alfa+Slab+One|Libre+Baskerville';
-            var t = document.getElementsByTagName('link')[0]; 
-            t.parentNode.insertBefore(font2, t);
-          })();
-    </script>
-<!-- Load blocking css at the end -->
-   
-   
+   </div>  
    {% if site.analytics %}
    {% include analytics.html %}
    {% endif %}
