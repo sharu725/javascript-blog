@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Fibonacci on first try!
+title: Fibonacci on the first try!
 permalink: /fibonacci-series-js/
 ---
 
