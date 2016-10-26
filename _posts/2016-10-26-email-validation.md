@@ -18,7 +18,6 @@ Here is a simple example to show how email validation works.
 <input type="text" name="email" onkeydown="validate(this.value);"> 
 </div>
 <script language="JavaScript">
-
 var ev = /^([_a-zA-Z0-9-]+)(\.[_a-zA-Z0-9-]+)*@([a-zA-Z0-9-]+\.)+([a-zA-Z]{2,3})$/;
 var x = document.getElementById("check");
 function validate(email){
@@ -41,21 +40,20 @@ I was searching for a simple code to make my form to provide instant error repor
 Finally, I came up with something close to what I was looking for. Then after furnishing it a bit, I came up with this.
 
 {% highlight javascript %}
-    var ev = /^([_a-zA-Z0-9-]+)(\.[_a-zA-Z0-9-]+)*@([a-zA-Z0-9-]+\.)+([a-zA-Z]{2,3})$/;
-    var x = document.getElementById("check");
-    
-    function email_validate(email){
-        if(!ev.test(email))
-            {
-                x.innerHTML	= "Not a valid email";
-                x.style.color = "red"
-            }
-        else
-            {
-                x.innerHTML	= "Looks good!";
-                x.style.color = "green"
-            }
+var ev = /^([_a-zA-Z0-9-]+)(\.[_a-zA-Z0-9-]+)*@([a-zA-Z0-9-]+\.)+([a-zA-Z]{2,3})$/;
+var x = document.getElementById("check");
+function validate(email){
+    if(!ev.test(email))
+        {
+            x.innerHTML	= "Not a valid email";
+            x.style.color = "red"
         }
+    else
+        {
+            x.innerHTML	= "Looks good!";
+            x.style.color = "green"
+        }
+    }
 {% endhighlight %}
 
 Here, I'm checking the entered value with special characters. I still don't know how exactly does the series ```/^([_a-zA-Z0-9-]+)(\.[_a-zA-Z0-9-]+)*@([a-zA-Z0-9-]+\.)+([a-zA-Z]{2,3})$/``` works.
